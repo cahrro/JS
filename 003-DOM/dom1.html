@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMDOM</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+    
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(125, 173, 189);
+        color: white;
+    }
+
+</style>
+<body>
+    <h1 class="t">Dom dom dom</h1>
+    <p>mc pedrinho</p>
+    
+    <script>
+        titulo = document.getElementsByTagName('h1')[0]
+        titulo.style.color = 'purple'
+        h = document.querySelector('h1.t')
+        h.style.background = 'green'
+
+        para = document.querySelector('p')
+        document.write('novinha no grau '+ para.innerHTML)
+    </script>
+</body>
+</html>
