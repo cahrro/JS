@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos soma</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+    
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main{
+        background: lightblue;
+        padding: 10%;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 10px 10px 2px #82b8ca;
+    }
+
+    main h1{
+        color: #06065c;
+        margin-bottom: 5%;
+    }
+
+    .campos{
+        padding: 1%;
+        margin: 1%;
+        text-align: center;
+    }
+
+    #resultado{
+        color: red;
+        font-size: 1.1em;
+        font-weight: bolder;
+    }
+
+    input{
+        border: none;
+    }
+    
+    button{
+        padding: 2%;
+        height: 10%;
+        width: 30%;
+        border: none;
+        background: white;
+        font-size: 0.9em;
+        font-weight: bolder;
+        color: #010157;
+        border-radius: 5px;
+
+    }
+
+    button:hover{
+        background: #010157 ;
+        color: white;
+    }
+
+
+</style>
+<body> 
+    <main>
+        <h1>Somando dois números</h1>
+        <div class="nums">
+            <input type="number" name="txtnum1" id="txtnum1" min="0" max="10" class="campos">
+            <span>+</span>
+            <input type="number" name="txtnum2" id="txtnum2" min="0" max="10" class="campos">
+            <span>=</span>
+            <span id="resultado"></span>
+        </div>
+        <br>
+        <button onclick="somar()">Somar</button>
+    </main>
+
+    <script>
+        function somar(){
+            var num1 = Number(document.querySelector('input#txtnum1').value)
+            var num2 = Number(document.querySelector('input#txtnum2').value)
+            var resultado = document.querySelector('span#resultado')
+            soma = num1 + num2
+            resultado.innerHTML = soma
+        }
+
+
+
+    </script>
+</body>
+</html>

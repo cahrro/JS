@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        background-color: whitesmoke;
+    }
+    .clicar{
+        background-color: rgb(238, 138, 155);
+        height: 40%;
+        width: 40%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 2em;
+    }
+</style>
+<body>
+    <div class="clicar">
+        Clique me
+    </div>
+    <script>
+        var a = document.querySelector('div.clicar')
+
+        a.addEventListener('click',clicar)
+        a.addEventListener('mouseover',entrou)
+        a.addEventListener('mouseout',sair)
+
+        function clicar(){
+            a.innerText = 'CLICOU'
+            a.style.background = 'purple'
+        }
+        function entrou(){
+            a.innerText = 'entrou'
+        }
+
+        function sair(){
+            a.innerText = 'saiu'
+            a.style.background = 'rgb(238, 138, 155)'
+        }
+
+    </script>
+</body>
+</html>
