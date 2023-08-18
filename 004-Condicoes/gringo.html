@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste nacionalidade</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+<body>
+    <h1>Teste sua nacionalidade</h1>
+    <label for="pais">Digite o seu país: </label>
+    <input type="text" name="pais" id="pais">
+    <div id="resultado"></div>
+    <br>
+    <button onclick="verificarpais()">ver</button>
+
+    <script>
+        function verificarpais(){
+            pais = document.getElementById('pais').value
+            resultado = document.getElementById('resultado')
+
+            resultado.innerHTML = `<p>Seu país é ${pais}</p>`
+
+            if( pais == 'brasil' || pais == 'Brasil'){
+                resultado.innerHTML += '<p>nós brasileiros..</p>'
+            } else{
+                resultado.innerHTML += '<p>Gringo xp</p>'
+            }
+        }
+    </script>
+</body>
+</html>
