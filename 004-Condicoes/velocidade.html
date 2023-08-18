@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de velocidae</title>
+</head>
+<body>
+    <h1>Teste de velocidade</h1>
+    <label for="vel">Digite sua velocidade: </label>
+    <input type="number" name="veltxt" id="veltxt" min="0" max="1000">
+    <div id="resultado">
+    </div>
+    <button onclick="calcular()">Verificar</button>
+
+    <script>
+        function calcular(){
+            var vel = Number(document.getElementById('veltxt').value)
+            var resultado = document.getElementById('resultado')
+            resultado.innerHTML = `<p>Sua velocidade é igual a <strong>${vel}Km/h</strong>.</p>`
+            if(vel>60){
+                resultado.innerHTML += '<p>Velocidade máxima excedida, uma <strong>multa</strong> será aplicada.</p>'
+            }
+            resultado.innerHTML += '<p>Priorize sempre dirigir com segurança.</p>'
+        }
+    </script>
+</body>
+</html>
