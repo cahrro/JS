@@ -57,7 +57,9 @@ button:hover{
 }
 
 img{
-    min-width: 170px;
-    height: 170px;
-    border-radius: 55%;
+    min-width: 200px;
+    height: 200px;
+    margin: 5%;
+    border-radius: 10px;
+    
 }
