@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <main>
+        <article class="numeros">
+            <label for="inicio">Início:</label>
+            <input type="number" name="inicio" id="iniciotxt" required  class="campos">
+            <br>
+            <label for="fim">Final:</label>
+            <input type="number" name="fim" id="fimtxt" required class="campos">
+            <br>
+            <label for="passo">Passo:</label>
+            <input type="number" name="passo" id="passotxt" required class="campos">
+            <br>
+            <input type="button" value="Contar" onclick="contar()" id="botao">
+        </article>
+        <article id="contagem">
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

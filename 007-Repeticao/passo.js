@@ -6,5 +6,5 @@ c = 1
 
 do{
     console.log(`Passo ${c}`)
-    c++
+    c++ 
 } while(c <= 6)
